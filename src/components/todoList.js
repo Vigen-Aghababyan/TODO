@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { setTodo } from "../redux/todoSlice"
-
+import { MdDelete } from "react-icons/md"
 
 const TodoList = () => {
 
@@ -28,7 +28,7 @@ const TodoList = () => {
                      <button onClick={() => {
                         dispatch(setTodo(todos.filter(del => del.id !== todo.id)))
                      }}
-                        className="btn">x</button>
+                        className="btnDel"><MdDelete /></button>
                   </div>)
             })
          }

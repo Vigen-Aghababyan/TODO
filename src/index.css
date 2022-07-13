@@ -35,7 +35,11 @@ code {
   justify-content: space-between;
 }
 
-.btn {
+.btn,
+.btnDel {
   border: none;
+}
 
+.btnDel:hover {
+  color: red;
 }

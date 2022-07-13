@@ -30,7 +30,7 @@ const Header = () => {
    return (
       <header className="Header">
 
-         <input type="text" value={text} onChange={changeText} placeholder="write a task" />
+         <input type="text" value={text} onChange={changeText} onKeyUp={e => e.key === "Enter" && sendTodo()} placeholder="write a task" />
          <button onClick={sendTodo} className="btn">Add Text</button>
 
       </header>
